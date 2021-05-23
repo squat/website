@@ -4,8 +4,7 @@ layout: blog
 title: 'Evolving Kubernetes networking with the Gateway API'
 date: 2021-04-22
 slug: evolving-kubernetes-networking-with-the-gateway-api
----
-
+--
 **Authors:** Mark Church (Google), Harry Bagdi (Kong), Daneyon Hanson (Red Hat), Nick Young (VMware), Manuel Zapf (Traefik Labs)
 
 The Ingress resource is one of the many Kubernetes success stories. It created a [diverse ecosystem of Ingress controllers](/docs/concepts/services-networking/ingress-controllers/) which were used across hundreds of thousands of clusters in a standardized and consistent way. This standardization helped users adopt Kubernetes. However, five years after the creation of Ingress, there are signs of fragmentation into different but [strikingly similar CRDs](https://dave.cheney.net/paste/ingress-is-dead-long-live-ingressroute.pdf) and [overloaded annotations](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/). The same portability that made Ingress pervasive also limited its future.
@@ -186,7 +185,7 @@ metadata:
 
 ### Role Oriented Design
 
-When you put it all together, you have a single load balancing infrastructure that can be safely shared by multiple teams. The Gateway API not only a more expressive API for advanced routing, but is also a role-oriented API, designed for multi-tenant infrastructure. Its extensibility ensures that it will evolve for future use-cases while preserving portability. Ultimately these characteristics will allow Gateway API to adapt to different organizational models and implementations well into the future.
+When you put it all together, you have a single load balancing infrastructure that can be safely shared by multiple teams. The Gateway API is not only a more expressive API for advanced routing, but is also a role-oriented API, designed for multi-tenant infrastructure. Its extensibility ensures that it will evolve for future use-cases while preserving portability. Ultimately these characteristics will allow the Gateway API to adapt to different organizational models and implementations well into the future.
 
 ### Try it out and get involved
 
